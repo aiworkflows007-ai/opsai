@@ -9,7 +9,7 @@
 | Milestone | Capability | PRD Phase | Verification Method | Date Verified |
 | :--- | :--- | :---: | :--- | :--- |
 | **0.1.0** | Project Scaffolding & Governance Spec | Setup | Git repository, directory structure, PRD v1.0 | 2026-09-14 |
-| | | | | |
+| **0.2.0** | Multi-Tenant Data Layer & pgvector Schema (#1) | Phase 1 | 16 Pytest automated tests, Alembic schema migration | 2026-09-14 |
 
 ---
 
