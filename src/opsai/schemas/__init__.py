@@ -1,6 +1,12 @@
 """OpsAI Pydantic Schemas."""
 
 from opsai.schemas.audit import AuditEventBase, AuditEventCreate, AuditEventRead
+from opsai.schemas.auth import (
+    AuthResponse,
+    LoginRequest,
+    RegisterTenantRequest,
+    TenantContextResponse,
+)
 from opsai.schemas.common import ORMModel, PaginatedResponse
 from opsai.schemas.conversation import (
     Citation,
@@ -29,6 +35,7 @@ __all__ = [
     "AuditEventBase",
     "AuditEventCreate",
     "AuditEventRead",
+    "AuthResponse",
     "Citation",
     "ConversationBase",
     "ConversationCreate",
@@ -42,12 +49,15 @@ __all__ = [
     "KnowledgeSourceBase",
     "KnowledgeSourceCreate",
     "KnowledgeSourceRead",
+    "LoginRequest",
     "MessageBase",
     "MessageCreate",
     "MessageRead",
     "ORMModel",
     "PaginatedResponse",
+    "RegisterTenantRequest",
     "TenantBase",
+    "TenantContextResponse",
     "TenantCreate",
     "TenantRead",
     "TenantUpdate",

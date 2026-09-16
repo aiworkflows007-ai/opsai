@@ -10,6 +10,7 @@
 | :--- | :--- | :---: | :--- | :--- |
 | **0.1.0** | Project Scaffolding & Governance Spec | Setup | Git repository, directory structure, PRD v1.0 | 2026-09-14 |
 | **0.2.0** | Multi-Tenant Data Layer & pgvector Schema (#1) | Phase 1 | 16 Pytest automated tests, Alembic schema migration | 2026-09-14 |
+| **0.3.0** | Authentication & Tenant Context Middleware (#2) | Phase 1 | 14 security & isolation tests (30 total passing) | 2026-09-16 |
 
 ---
 
@@ -28,10 +29,10 @@
 
 | Security Test Category | Test Cases Executed | Blocked Attack Rate | Notes |
 | :--- | :--- | :--- | :--- |
-| **Direct Prompt Injection** | 0 | - | |
-| **Indirect Prompt Injection** | 0 | - | |
-| **Cross-Tenant Isolation** | 0 | - | |
-| **Tool Privilege Escalation** | 0 | - | |
+| **Direct Prompt Injection** | 0 | - | Scheduled for Phase 5 |
+| **Indirect Prompt Injection** | 0 | - | Scheduled for Phase 5 |
+| **Cross-Tenant Isolation** | 6 | 100% | Spoofed tenant_id, cross-tenant resource reads, inactive tenant checks |
+| **Role Privilege Escalation** | 2 | 100% | Employee unauthorized admin endpoint access blocked (403) |
 
 ---
 
